@@ -13,6 +13,14 @@
 const prompt = require("prompt-sync")();
 let saldo = Number(prompt("Qual o saldo?"))
 let valor = Number(prompt("Qual o valor do pix?"))
+let hora = Number(prompt("Qual o valor do pix?"))
+let limite = 5000;
+
+if (hora >=20){
+    limite=1000
+}
+
+
 
 if (saldo >= valor) {
     saldo = saldo - valor;
@@ -22,3 +30,12 @@ if (saldo >= valor) {
 }
 
  
+
+if(valor > limite){
+    console.log("Pix bloqueado" + "Limite Noturno atingido")
+}
+
+ if (saldo >= valor + hora){
+
+ }
+    console.log("Pix enviado R$:" + saldo.toFixed(2))
