@@ -31,7 +31,7 @@ if (saldo >= valor) {
 
  
 
-if(valor > limite){
+if(valor < limite){
     console.log("Pix bloqueado" + "Limite Noturno atingido")
 }
 
