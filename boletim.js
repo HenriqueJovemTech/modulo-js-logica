@@ -71,11 +71,11 @@
 const medias = [ 8.5, 6, 5, 9.2, 4, 8]
 const nomes = ["Henrique", "Paulo","Lancaster","Ilgner", "Heitor","Ely"]
 
-console.log("Aluno : " + nomes[3] + " Media : " + medias[3])
+// console.log("Aluno : " + nomes[3] + " Media : " + medias[3])
 
 
 
-for (let i = 0; i < medias.length; i++) {
+for (let i = 0; i < medias.length; i++)
   if (medias[i] >= 7){
  console.log(nomes[i] + " Aprovado ")
 
@@ -83,4 +83,3 @@ for (let i = 0; i < medias.length; i++) {
     console.log(nomes[i] + " Reprovado ")
 }
 
-};
