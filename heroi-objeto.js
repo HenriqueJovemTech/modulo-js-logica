@@ -14,7 +14,8 @@ const heroi = {
     critico: 0.2,
     danoCritico: 2,
     inventario: [],
-    
+    sorte:Math.random(),
+    esquiva:0.2
 }
 
 const aranha ={
@@ -27,6 +28,31 @@ const aranha ={
     
 }
 
-console.log(heroi.vida)
-//heroi = 15 erro de constante sendo mudada (TypeError: Assignment to constant variable.)
-console.log(heroi.vida)
+// console.log(heroi.vida)
+// //heroi = 15 erro de constante sendo mudada (TypeError: Assignment to constant variable.)
+// console.log(heroi.vida)
+
+// console.log(heroi.inventario);
+// heroi.inventario.push(heroi.nome  +  " recebeu o item Revolver.38 "  +  heroi.inventario)  //Adicionando item ao inventario com **Push
+
+// // console.log(heroi.inventario)
+
+function tomarDano(heroi, inimigo){
+heroi.vida = heroi.vida - inimigo.dano
+let chance = Math.random()
+
+console.log("Deu sorte")
+}
+if(heroi.vida <= inimigo.chance){
+    heroi.veneno = inimigo.veneno
+    console.log("A aranha de injeta o veneno")
+else if (chance <= chance) {
+    heroi.veneno = inimigo.chanceVeneno
+
+if(heroi.vida <= inimigo.chance){
+    heroi.veneno = inimigo.veneno
+    console.log("A aranha de injeta o veneno")
+
+}
+// tomarDano(heroi)
+// console.log("teste")
